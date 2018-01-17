@@ -16,6 +16,19 @@ switch(msgid){
 		network_send_packet(socket_id, bufferSend, buffer_tell(bufferSend));
 	break;	
 	
+	case networkEvents.shoot:
+		with(objClient){
+			if(client_id = client_id_current){
+				shooting = buffer_read(buffer, buffer_bool);
+				if shooting = true{
+					pointx = buffer_read(buffer, buffer_u16);
+					pointy = buffer_read(buffer, buffer_u16);
+					
+				}
+			}
+		}
+	break;
+	
 	// "a"
 	case networkEvents.a: 
 		with(objClient){
@@ -51,32 +64,7 @@ switch(msgid){
 			}
 		}
 	break;
-/*	
-	//Projectiles
-	case 3: 
-		var 
-		startx = buffer_read(buffer, buffer_u16),
-		starty = buffer_read(buffer, buffer_u16),
-		pointx = buffer_read(buffer, buffer_u16),
-		pointy = buffer_read(buffer, buffer_u16);
-		
-		buffer_seek(bufferSend, buffer_seek_start, 0);
-		buffer_write(bufferSend, buffer_u8, 3);
-		buffer_write(bufferSend, buffer_u16, client_id_current);
-		buffer_write(bufferSend, buffer_u16, startx);
-		buffer_write(bufferSend, buffer_u16, starty);
-		buffer_write(bufferSend, buffer_u16, pointx);
-		buffer_write(bufferSend, buffer_u16, pointy);
 
-		with(objClient){
-			if(client_id != client_id_current){
-				network_send_packet(self.socket_id, other.bufferSend, buffer_tell(other.bufferSend));
-			}	
-		}
-		
-		
-	break;
-	*/
 	// disconnect 
 	case networkEvents.disconnect: 
 

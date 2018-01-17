@@ -19,3 +19,4 @@ if moving  {
     var move_dir = point_direction(0,0,move_xinput,move_yinput);
     move(move_speed_this_frame,  move_dir);
 }
+

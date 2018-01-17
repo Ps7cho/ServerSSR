@@ -13,12 +13,3 @@
 		
 	alarm[0] = 10;
 	
-	
-/*
-	//Send Position
-	buffer_seek(bufferSmall, buffer_seek_start, 0);
-	buffer_write(bufferSmall, buffer_u8, 2);
-	buffer_write(bufferSmall, buffer_u16, round(object_Character.x));
-	buffer_write(bufferSmall, buffer_u16, round(object_Character.y));
-	network_send_packet(socket, bufferSmall, buffer_tell(bufferSmall));
-*/
