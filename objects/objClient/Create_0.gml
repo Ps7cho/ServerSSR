@@ -10,6 +10,8 @@ movement_inputs[3] = 0;
 alarm[0] = 1;
 alarm[1] = 3;
 
+client_id = -1;
+
 shooting = false;
 canShoot = true;
 reloadRate = 21;
@@ -19,3 +21,8 @@ Health = 100;
 
 pointx = noone;
 pointy = noone;
+
+while !place_empty(x,y){
+x++;
+y++;
+}

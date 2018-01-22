@@ -2,8 +2,8 @@
 
 var socket_id = argument0;
 
-var startx = 300;
-var starty = 300;
+var startx = room_width/2;
+var starty = room_height/2;
 
 
 l = instance_create_layer(startx, starty, "Instances", objClient);

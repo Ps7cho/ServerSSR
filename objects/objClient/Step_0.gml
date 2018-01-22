@@ -20,3 +20,6 @@ if moving  {
     move(move_speed_this_frame,  move_dir);
 }
 
+if Health <= 0 {
+	scrRespawn();
+}
