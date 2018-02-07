@@ -28,3 +28,7 @@ var client_id_current = clientMap[? string(socket_id)].client_id;
 	with(objClient){
 		network_send_packet(self.socket_id, other.bufferSend, buffer_tell(other.bufferSend));
 	}
+	
+	with objClient {
+	scrUpdateHealth(id);	
+	}

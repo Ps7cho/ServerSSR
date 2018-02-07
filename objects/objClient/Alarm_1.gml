@@ -18,6 +18,7 @@ if shooting{
 		buffer_write(objServer.bufferSend, buffer_u16, y+(sprite_height/2));
 		buffer_write(objServer.bufferSend, buffer_u16, pointx);
 		buffer_write(objServer.bufferSend, buffer_u16, pointy);
+		buffer_write(objServer.bufferSend, buffer_u16, slug);
 		
 		with(objClient){
 			network_send_packet(self.socket_id, objServer.bufferSend, buffer_tell(objServer.bufferSend));

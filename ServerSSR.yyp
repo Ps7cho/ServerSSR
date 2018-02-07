@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "4d86781b-d24f-4f5e-afba-2d28494db931",
+            "Value": {
+                "id": "02bc3e28-c494-4420-be97-ca0bd319928c",
+                "resourcePath": "scripts\\scrDestroyBullet\\scrDestroyBullet.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "62d0db44-f51f-457f-8d97-54397f584319",
             "Value": {
                 "id": "1822a4eb-dca1-49c4-b5d1-95bfe7bc9af6",

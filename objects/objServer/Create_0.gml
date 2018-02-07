@@ -33,6 +33,7 @@ enum networkEvents {
 	a,
 	shoot,
 	hit,
+	bullet,
 	position,
 	connect,
 	disconnect

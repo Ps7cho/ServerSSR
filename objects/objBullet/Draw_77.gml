@@ -1,4 +1,7 @@
 /// @description collision
 
-if (place_meeting(x,y,objWalls)) instance_destroy();
+if (place_meeting(x,y,objWalls)){
+	instance_destroy();
+	scrDestroyBullet(id);
+}
 

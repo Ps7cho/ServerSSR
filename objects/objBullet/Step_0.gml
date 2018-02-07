@@ -8,5 +8,6 @@ if (client != noone){
 
 		instance_destroy();
 		scrUpdateHealth(client);
+		scrDestroyBullet(id);
 	}
 }
