@@ -19,7 +19,7 @@ clientMap[? string(socket_id)] = l;
 var client_id_current = clientMap[? string(socket_id)].client_id;
 
 
-// tell each client to make this new player (even themself)
+// tell each client to make this new player (even themselfs)
 	buffer_seek(bufferSend, buffer_seek_start, 0);
 	buffer_write(bufferSend, buffer_u8, networkEvents.connect);
 	buffer_write(bufferSend, buffer_u16, client_id_current);
@@ -31,4 +31,17 @@ var client_id_current = clientMap[? string(socket_id)].client_id;
 	
 	with objClient {
 	scrUpdateHealth(id);	
+	}
+	
+	
+	//Build all the buildings
+	if instance_exists(objBuildingParent){
+		with (objBuildingParent){
+			buffer_seek(other.bufferSend, buffer_seek_start, 0);
+			buffer_write(other.bufferSend, buffer_u8, networkEvents.building);
+			buffer_write(other.bufferSend, buffer_u8, 1); //Building type (building.Generic)
+			buffer_write(other.bufferSend, buffer_u16, x);
+			buffer_write(other.bufferSend, buffer_u16, y);
+			network_send_packet(socket_id, other.bufferSend, buffer_tell(other.bufferSend));
+		}
 	}

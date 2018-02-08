@@ -4,4 +4,3 @@ if (place_meeting(x,y,objWalls)){
 	instance_destroy();
 	scrDestroyBullet(id);
 }
-

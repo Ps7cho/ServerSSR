@@ -29,6 +29,36 @@ switch(msgid){
 		}
 	break;
 	
+	case networkEvents.building:
+		
+		var building = buffer_read(buffer, buffer_u8);
+		x_pos = buffer_read(buffer, buffer_u16);
+		y_pos = buffer_read(buffer, buffer_u16);
+		
+		//check if this point is avalible 
+		Test = instance_create_layer(-10,-10,"instances_1",objBuilding);
+		with (Test){
+			var space = place_empty(other.x_pos, other.y_pos);
+		}
+
+		// create if the space is free
+		if space{
+			instance_create_layer(x_pos,y_pos,"instances_1",objBuilding);
+			
+			buffer_seek(buffer, buffer_seek_start, 0);
+			buffer_write(bufferSend, buffer_u8, networkEvents.building);
+			buffer_write(bufferSend, buffer_u8, building); //Building type (building.Generic)
+			buffer_write(bufferSend, buffer_u16, x_pos);
+			buffer_write(bufferSend, buffer_u16, y_pos);
+				
+			with(objClient){
+				network_send_packet(self.socket_id, objServer.bufferSend, buffer_tell(objServer.bufferSend));
+			}
+		}
+		
+	
+	break;
+	
 	// "a"
 	case networkEvents.a: 
 		with(objClient){
