@@ -11,3 +11,13 @@ if (client != noone){
 		scrDestroyBullet(id);
 	}
 }
+
+var building = instance_position(x,y, objBuildingParent);
+if building != noone{
+	building.Health -= 15;
+	
+	instance_destroy();
+	//scrUpdateHealth(client); need to update building health on all the clients
+	scrDestroyBullet(id);
+	
+}

@@ -42,6 +42,7 @@ var client_id_current = clientMap[? string(socket_id)].client_id;
 			buffer_write(other.bufferSend, buffer_u8, 1); //Building type (building.Generic)
 			buffer_write(other.bufferSend, buffer_u16, x);
 			buffer_write(other.bufferSend, buffer_u16, y);
+			buffer_write(other.bufferSend, buffer_u16, id);
 			network_send_packet(socket_id, other.bufferSend, buffer_tell(other.bufferSend));
 		}
 	}

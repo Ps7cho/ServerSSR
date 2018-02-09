@@ -43,19 +43,20 @@ switch(msgid){
 
 		// create if the space is free
 		if space{
-			instance_create_layer(x_pos,y_pos,"instances_1",objBuilding);
+			var blding = instance_create_layer(x_pos,y_pos,"instances_1",objBuilding);
 			
 			buffer_seek(buffer, buffer_seek_start, 0);
 			buffer_write(bufferSend, buffer_u8, networkEvents.building);
 			buffer_write(bufferSend, buffer_u8, building); //Building type (building.Generic)
 			buffer_write(bufferSend, buffer_u16, x_pos);
 			buffer_write(bufferSend, buffer_u16, y_pos);
+			buffer_write(bufferSend, buffer_u16, blding);
 				
 			with(objClient){
 				network_send_packet(self.socket_id, objServer.bufferSend, buffer_tell(objServer.bufferSend));
 			}
 		}
-		
+		instance_destroy(Test);
 	
 	break;
 	
