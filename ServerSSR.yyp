@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0326c4a7-5068-4478-8d41-42078a9f53ba",
+            "Value": {
+                "id": "e49e5fcb-0aaf-410d-bdb0-02d850f48c21",
+                "resourcePath": "sprites\\sprBase\\sprBase.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0453c03d-13d3-455b-854b-3182dfd8e0f0",
             "Value": {
                 "id": "ebbbc0d0-e505-4695-a739-090b834baae9",
@@ -111,6 +119,14 @@
             }
         },
         {
+            "Key": "427f89c4-6eba-41b9-8714-dfa6a4a0ea7a",
+            "Value": {
+                "id": "4071c297-62ac-4a99-871f-326ba3a1fb41",
+                "resourcePath": "sprites\\sprMineralExtractor\\sprMineralExtractor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4d33d2bb-b05c-4cef-b68a-7c6be678c13a",
             "Value": {
                 "id": "02eb8047-1a97-4d54-abd4-0917eb1eaa1d",
@@ -127,11 +143,43 @@
             }
         },
         {
+            "Key": "502f9e68-fe4c-425f-b701-a8bc8944a700",
+            "Value": {
+                "id": "265c07f3-4ec4-4d17-96b6-4bd89f884923",
+                "resourcePath": "sprites\\sprEnergyTower\\sprEnergyTower.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5119aa6d-7e40-4a26-915d-6023adb8c725",
+            "Value": {
+                "id": "fe6e575e-3910-41cb-b191-938ae9d6892e",
+                "resourcePath": "sprites\\sprWarpGate\\sprWarpGate.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5b0c2e66-8da3-46c4-9f66-c8c2139ce82f",
+            "Value": {
+                "id": "0097c72c-aa4f-4c1b-bbaa-cfb2950d98c0",
+                "resourcePath": "views\\5b0c2e66-8da3-46c4-9f66-c8c2139ce82f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "62d0db44-f51f-457f-8d97-54397f584319",
             "Value": {
                 "id": "1822a4eb-dca1-49c4-b5d1-95bfe7bc9af6",
                 "resourcePath": "objects\\objWallSide\\objWallSide.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "62d6d666-a291-4f96-b2a0-754fb96d8f59",
+            "Value": {
+                "id": "14f45af9-9ab6-487b-829b-88ccaa27a8c0",
+                "resourcePath": "sprites\\sprIronMiner\\sprIronMiner.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -155,6 +203,14 @@
             "Value": {
                 "id": "33a1e454-fadb-4956-b8e8-4ac0f21eefd8",
                 "resourcePath": "sprites\\sprBuilding\\sprBuilding.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6f0dfc8e-8022-46b6-8009-ea7380be6c67",
+            "Value": {
+                "id": "f23cf970-cbf1-4e22-8f65-1239e893d9e0",
+                "resourcePath": "sprites\\sprGasStorage\\sprGasStorage.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -183,11 +239,27 @@
             }
         },
         {
+            "Key": "83d3fe32-278e-495c-821d-ebfe9bed69f9",
+            "Value": {
+                "id": "cebe5bfb-ad0a-495e-ae11-ff19c5d8a565",
+                "resourcePath": "sprites\\sprGasExtractor\\sprGasExtractor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8431cbdd-13d7-4aba-95ff-bb05c3054f86",
             "Value": {
                 "id": "c99fd6d6-1957-4927-8997-bd6f0c030be7",
                 "resourcePath": "views\\8431cbdd-13d7-4aba-95ff-bb05c3054f86.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "858fecfb-f7af-4133-be44-670304267f87",
+            "Value": {
+                "id": "4ae12ad6-36e4-43ae-89a6-a65bdcee03ee",
+                "resourcePath": "sprites\\sprPlasmaProducer\\sprPlasmaProducer.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -359,6 +431,14 @@
             }
         },
         {
+            "Key": "d4a36195-824b-4f5f-bd93-ba51229e96fc",
+            "Value": {
+                "id": "a37f3bb0-1b8c-448e-9c5e-818781da0408",
+                "resourcePath": "sprites\\sprPlasmaSupply\\sprPlasmaSupply.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d8cad647-dd9c-4da8-b32c-885535945037",
             "Value": {
                 "id": "d60dbc87-efec-49fd-acef-6c3a5f2f8d1d",
@@ -410,7 +490,10 @@
     "script_order": [
         "c302eede-2dd2-483a-a8af-9657fd6d1651",
         "f5dc0b20-e982-4234-baac-f4468640e161",
-        "944fc3f7-30d1-4bb5-baf0-df8de2691532"
+        "944fc3f7-30d1-4bb5-baf0-df8de2691532",
+        "c8bf9ce3-3f56-48ad-b343-be127949a38d",
+        "77a20254-9e5b-45ab-a384-4d0f22260e4b",
+        "4d86781b-d24f-4f5e-afba-2d28494db931"
     ],
     "tutorial": ""
 }
