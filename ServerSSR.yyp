@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "a76318cf-237c-438a-9d2f-6f6e99dfb2af",
+            "Value": {
+                "id": "b40ede93-b4cb-4b84-a386-a04838dfcf73",
+                "resourcePath": "scripts\\scrDestroyBuilding\\scrDestroyBuilding.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "51a8769a-edc4-416c-9924-5e5de582587f",
@@ -517,7 +525,8 @@
         "944fc3f7-30d1-4bb5-baf0-df8de2691532",
         "c8bf9ce3-3f56-48ad-b343-be127949a38d",
         "77a20254-9e5b-45ab-a384-4d0f22260e4b",
-        "4d86781b-d24f-4f5e-afba-2d28494db931"
+        "4d86781b-d24f-4f5e-afba-2d28494db931",
+        "a76318cf-237c-438a-9d2f-6f6e99dfb2af"
     ],
     "tutorial": ""
 }
