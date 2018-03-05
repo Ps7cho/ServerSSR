@@ -21,3 +21,17 @@ if building != noone{
 	scrDestroyBullet(id);
 	
 }
+if instance_exists(objRobot){
+	var robot = instance_place(x,y,objRobot);
+	if robot != noone{
+		if robot.Team != Team {
+			robot.Health -= 20;
+			if robot.Health <= 0{
+				scrRobot(0,0,Team,0, -1, robot.id);	
+			}
+			instance_destroy();
+			
+			scrDestroyBullet(id);
+		}
+	}
+}

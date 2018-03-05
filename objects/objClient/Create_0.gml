@@ -11,6 +11,7 @@ alarm[0] = 1;
 alarm[1] = 3;
 
 client_id = -1;
+socket_id = -1;
 
 shooting = false;
 canShoot = true;

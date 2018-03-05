@@ -5,6 +5,7 @@ if shooting{
 		reloadRate = 21;
 		var move_speed_this_frame = bulletSpeed*global.seconds_passed;
 		var slug = instance_create_layer(x+(sprite_width/2), y+(sprite_height/2), "Bullets",objBullet);	
+		slug.Team = Team;
 		with slug{
 			ID = other.client_id;
 			image_angle = point_direction(x, y, other.pointx, other.pointy);

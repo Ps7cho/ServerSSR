@@ -24,6 +24,8 @@
 //Globals
 global.debug = true;
 
+//Game Variables
+turn = true;
 
 enum networkEvents {
 	ping,
@@ -37,6 +39,8 @@ enum networkEvents {
 	position,
 	building,
 	buildingDestroy,
+	robot,
+	credits,
 	connect,
 	disconnect
 }
