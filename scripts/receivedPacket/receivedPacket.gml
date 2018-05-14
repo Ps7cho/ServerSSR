@@ -6,7 +6,7 @@ var msgid = buffer_read(buffer, buffer_u8),
 client_id_current = clientMap[? string(socket_id)].client_id;
 
 switch(msgid){ 
-		//Ping
+//Ping
 	case networkEvents.ping:
 		var time = buffer_read(buffer, buffer_u32);
 		
@@ -36,14 +36,14 @@ switch(msgid){
 		x_pos = buffer_read(buffer, buffer_u16);
 		y_pos = buffer_read(buffer, buffer_u16);
 		
-		//check if this point is avalible 
+//check if this point is avalible 
 		var checkBuilding = scrBuildingPicker(building);
 		Test = instance_create_layer(10,10,"Buildings",checkBuilding);
 		with (Test){
 			var space = !place_meeting(other.x_pos, other.y_pos,objBuildingParent);
 		}
 
-		// create if the space is free
+// create if the space is free
 		if space{
 			thisTeam = scrObjTeam(team);
 			if checkBuilding.BuildingCost <= thisTeam.Credits {
@@ -70,43 +70,21 @@ switch(msgid){
 	
 	break;
 	
-	// "a"
-	case networkEvents.a: 
+// player inputs
+	case networkEvents.input: 
+	var key = buffer_read(buffer, buffer_u8);
+	var pressed = buffer_read(buffer, buffer_bool);
+	//scrInputs(client_id_current, key, pressed);
+	key = Wrap(key+2,0,3);
 		with(objClient){
 			if(client_id = client_id_current){
-				movement_inputs[0] = buffer_read(buffer, buffer_bool);
+				movement_inputs[key] = pressed;
 			}
 		}
+		
 	break;
 
-	// "s"
-	case networkEvents.s: 
-		with(objClient){
-			if(client_id = client_id_current){
-				movement_inputs[1] = buffer_read(buffer, buffer_bool);
-			}
-		}
-	break;
-	
-	// "d"
-	case networkEvents.d: 
-		with(objClient){
-			if(client_id = client_id_current){
-				movement_inputs[2] = buffer_read(buffer, buffer_bool);
-			}
-		}
-	break;
-	
-	// "w"
-	case networkEvents.w: 
-		with(objClient){
-			if(client_id = client_id_current){
-				movement_inputs[3] = buffer_read(buffer, buffer_bool);
-			}
-		}
-	break;
-
-	// disconnect 
+// disconnect 
 	case networkEvents.disconnect: 
 
 		

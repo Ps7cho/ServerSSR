@@ -1,18 +1,18 @@
 {
-    "id": "0453c03d-13d3-455b-854b-3182dfd8e0f0",
+    "id": "ab1c71f2-bdd7-4b92-89dd-3059fb33e5e4",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "objWalls",
     "eventList": [
         {
-            "id": "43d9f870-f408-473b-b30a-d808d7cf2248",
+            "id": "b38b6e5f-f5fb-4878-91d5-875df7e7927c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "0453c03d-13d3-455b-854b-3182dfd8e0f0"
+            "m_owner": "ab1c71f2-bdd7-4b92-89dd-3059fb33e5e4"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

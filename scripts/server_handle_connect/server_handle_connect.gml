@@ -3,8 +3,8 @@
 var socket_id = argument0;
 var team = scrTeamPicker();
 
-var startx = team.x
-var starty = team.y
+var startx = team.x +250
+var starty = team.y 
 
 l = instance_create_layer(startx, starty, "Instances", objClient);
 l.socket_id = socket_id;
@@ -72,9 +72,27 @@ var client_id_current = clientMap[? string(socket_id)].client_id;
 		}
 	}
 	
+		//Build all the Resources
+	if instance_exists(objWalls){
+		with (objWalls){
+			buffer_seek(other.bufferSend, buffer_seek_start, 0);
+			buffer_write(other.bufferSend, buffer_u8, networkEvents.building);
+			buffer_write(other.bufferSend, buffer_u8, buildingType); //Building type (building.Generic)
+			buffer_write(other.bufferSend, buffer_u16, x);
+			buffer_write(other.bufferSend, buffer_u16, y);
+			buffer_write(other.bufferSend, buffer_u16, id);
+			buffer_write(other.bufferSend, buffer_s8, Team);
+			buffer_write(other.bufferSend, buffer_u16, team.Credits);
+			
+			network_send_packet(socket_id, other.bufferSend, buffer_tell(other.bufferSend));
+		}
+	}
+	
 		//Build all the Robots
 	if instance_exists(objRobot){
 		with (objRobot){
 			scrRobot(x,y,Team,target, true, id);
 		}
 	}
+	
+	

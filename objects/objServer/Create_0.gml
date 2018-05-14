@@ -29,10 +29,7 @@ turn = true;
 
 enum networkEvents {
 	ping,
-	w,
-	d,
-	s,
-	a,
+	input,
 	shoot,
 	hit,
 	bullet,
@@ -43,4 +40,20 @@ enum networkEvents {
 	credits,
 	connect,
 	disconnect
+}
+
+enum loadTypes {
+	credits,
+	plasma
+	
+}
+
+enum buildings {
+	objBase0,
+	objMiner,
+	objPlasmaProducer,
+	objPlasmaSupply
+	
+	
+		
 }

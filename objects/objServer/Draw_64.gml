@@ -8,8 +8,8 @@ draw_text( 5, 20, "Total Clients: "+ string( ds_list_size(socketlist) ) );
 
 var credits = objTeam1.Credits;	
 	
-draw_text( 5, 15+50, "Team1 Credits: "+ string( credits ) );
+draw_text( 5, 15*1+50, "Team1 Credits: "+ string( credits ) );
 
 var credits = objTeam2.Credits;	
 	
-draw_text( 5, 30+50, "Team2 Credits: "+ string( credits ) );
+draw_text( 5, 15*2+50, "Team2 Credits: "+ string( credits ) );

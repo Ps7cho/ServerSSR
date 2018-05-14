@@ -13,4 +13,6 @@ mineAmmount = 10;
 cash = 0;
 MaxCash = 200;
 
+loadType = loadTypes.credits;
+
 alarm[0] = miningSpeed;

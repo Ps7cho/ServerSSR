@@ -5,6 +5,7 @@
 		buffer_write(objServer.bufferSend, buffer_u16, client_id);
 		buffer_write(objServer.bufferSend, buffer_u16, x);
 		buffer_write(objServer.bufferSend, buffer_u16, y);
+		buffer_write(objServer.bufferSend, buffer_u8, ruberband); //Distance for rubberband <255
 		
 		with(objClient){
 			network_send_packet(self.socket_id, objServer.bufferSend, buffer_tell(objServer.bufferSend));

@@ -39,19 +39,19 @@
             }
         },
         {
-            "Key": "0453c03d-13d3-455b-854b-3182dfd8e0f0",
-            "Value": {
-                "id": "ebbbc0d0-e505-4695-a739-090b834baae9",
-                "resourcePath": "objects\\objWalls\\objWalls.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "05e5e265-3824-480c-999f-75599e582636",
             "Value": {
                 "id": "96fbd1f6-7674-4263-964c-d4a4d6709317",
                 "resourcePath": "sprites\\sprBase1\\sprBase1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "12dbd388-c884-4365-b206-432bc1439e4d",
+            "Value": {
+                "id": "7b395a76-17a2-49f1-9277-9665095660f9",
+                "resourcePath": "shaders\\shader0\\shader0.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "7c1dffe6-e056-445c-acd4-2784b0329e5b",
+            "Value": {
+                "id": "6228e843-b1ef-4ecc-b657-563bb0679575",
+                "resourcePath": "scripts\\Wrap\\Wrap.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7c96ae6c-9152-4ebe-b0e6-270405a2f399",
             "Value": {
                 "id": "09ca56f4-bdd1-426c-b339-e9d1017ae1d2",
@@ -487,11 +495,27 @@
             }
         },
         {
+            "Key": "a96ddb3d-57bb-41b1-b588-dcc317a874ec",
+            "Value": {
+                "id": "20531de8-e74c-4f15-9a15-34d041bdc4b7",
+                "resourcePath": "extensions\\extension0\\extension0.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
             "Key": "aa031fb7-4ed4-48a8-a68b-7abd071da3c9",
             "Value": {
                 "id": "67fe2e7e-ba53-4c4c-a8fa-907666b42a1a",
                 "resourcePath": "rooms\\room_0\\room_0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "ab1c71f2-bdd7-4b92-89dd-3059fb33e5e4",
+            "Value": {
+                "id": "06325f8d-b4b6-4080-a0fb-b4f736f2067f",
+                "resourcePath": "objects\\objWalls\\objWalls.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -583,11 +607,27 @@
             }
         },
         {
+            "Key": "c340f200-9b31-42f3-b626-c5842c3430ae",
+            "Value": {
+                "id": "fef1ae20-a1ef-45d3-bfcd-837cf7c124d9",
+                "resourcePath": "fonts\\font0\\font0.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "c3deb946-11a1-4530-bf31-6eaabd066e2f",
             "Value": {
                 "id": "796be683-7898-4773-a2b9-c7770cc0b526",
                 "resourcePath": "objects\\objWallRight\\objWallRight.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c4dcf058-10ec-4454-ba57-4113520ba400",
+            "Value": {
+                "id": "8778a18a-4921-4880-9ca0-6656956af3a5",
+                "resourcePath": "scripts\\scrInputs\\scrInputs.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -715,7 +755,9 @@
         "c0c68881-fb60-4fc2-bc6d-2cb4a3ab4da6",
         "59808bb1-4c56-41b9-b37a-b5934d052e38",
         "cf072721-c041-43d6-ae66-266c754d7a2d",
-        "77f89ea3-3f00-4968-bb8e-d01849c40b87"
+        "77f89ea3-3f00-4968-bb8e-d01849c40b87",
+        "c4dcf058-10ec-4454-ba57-4113520ba400",
+        "7c1dffe6-e056-445c-acd4-2784b0329e5b"
     ],
     "tutorial": ""
 }

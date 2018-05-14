@@ -27,3 +27,4 @@ if place_free(xtarg,ytarg) {
         }
     }
 }
+
